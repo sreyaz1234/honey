@@ -1,0 +1,89 @@
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~ (master)
+$ pwd
+/c/Users/TKRCET
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~ (master)
+$ cd Desktop
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop (master)
+$ mkdir devops
+mkdir: cannot create directory ‘devops’: File exists
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop (master)
+$ mkdir project4
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop (master)
+$ ls
+ Project/   Project2/   desktop.ini   devops/   project1/   project4/   registrationform.html  '~$ableau.docx'
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop (master)
+$ ls
+ desktop.ini   devops/   project4/  '~$ableau.docx'
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop (master)
+$ cd project4
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop/project4 (master)
+$ git config --global user.email "ashwinipatel4545@gmail.com"
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop/project4 (master)
+$ git config --global user.name "Ashwini4545"
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop/project4 (master)
+$ ls -a
+./  ../  registration_form.html  styles.css
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop/project4 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   ../devops/registration_form.html
+        new file:   ../devops/styles.css
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../devops/registration_form.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../desktop.ini
+        ./
+        ../~$ableau.docx
+
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop/project4 (master)
+$ git commit  -m "committing all files"
+[master (root-commit) 7ef58e0] committing all files
+ 2 files changed, 48 insertions(+)
+ create mode 100644 devops/registration_form.html
+ create mode 100644 devops/styles.css
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop/project4 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        deleted:    ../devops/registration_form.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ../desktop.ini
+        ./
+        ../~$ableau.docx
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+TKRCET@DESKTOP-D2O3B8R MINGW64 ~/Desktop/project4 (master)
+$ git log
+commit 7ef58e094122766255cfee71e517c1d4d973f9b8 (HEAD -> master)
+Author: Ashwini4545 <ashwinipatel4545@gmail.com>
+Date:   Thu Sep 12 11:01:16 2024 +0530
+
+    committing all files
